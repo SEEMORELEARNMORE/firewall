@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_page_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="left"
+        android:text="电话"
+        android:textColor="@color/color_black"
+        android:textStyle="bold"
+        android:textSize="38sp" />
+    <!-- ListView控件 -->
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/phonelistView"
+        />
+
+
+</LinearLayout>

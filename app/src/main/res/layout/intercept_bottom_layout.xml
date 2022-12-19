@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_page_bg">
+
+    <ImageView
+        android:id="@+id/home_image_view"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:src="@drawable/home"
+        android:layout_marginLeft="300dp"
+        tools:ignore="RtlHardcoded" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="2dp">
+
+
+
+        <RelativeLayout
+            android:id="@+id/delete_layout_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/delete_image_view"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/tab_delete" />
+
+            <TextView
+                android:id="@+id/delete_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/delete_image_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="全部删除"
+                android:textColor="@color/comui_tab"
+                android:textSize="13sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/number_appeal_layout_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/number_appeal_image_view"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/tab_number_appeal" />1
+
+            <TextView
+                android:id="@+id/number_appeal_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/number_appeal_image_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="号码申诉"
+                android:textColor="@color/comui_tab"
+                android:textSize="13sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/intercept_rules_layout_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/intercept_rules_image_view"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/tab_intercept_rules" />
+
+            <TextView
+                android:id="@+id/intercept_rules_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/intercept_rules_image_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="拦截规则"
+                android:textColor="@color/comui_tab"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/linearLayout"
+        android:background="@color/comui_tab" />
+
+</RelativeLayout>

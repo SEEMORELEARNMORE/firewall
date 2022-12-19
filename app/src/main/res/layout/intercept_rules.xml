@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/intercept_phone_layout_view"
+        android:layout_width="380dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:id="@+id/intercept_phone_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="left"
+            android:pointerIcon="hand"
+            android:text="电话拦截规则"
+            android:textColor="@color/comui_tab"
+            android:textSize="25sp" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignEnd="@+id/intercept_phone_text_view"
+            android:src="@drawable/guide" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/intercept_message_layout_view"
+        android:layout_width="380dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="10dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/intercept_message_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="left"
+            android:pointerIcon="hand"
+            android:text="短信拦截规则"
+            android:textColor="@color/comui_tab"
+            android:textSize="25sp" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignEnd="@+id/intercept_message_text_view"
+            android:src="@drawable/guide" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/intercept_blacklist_layout_view"
+        android:layout_width="380dp"
+        android:layout_height="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/intercept_blacklist_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="left"
+            android:pointerIcon="hand"
+            android:text="黑名单"
+            android:textColor="@color/comui_tab"
+            android:textSize="25sp" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignEnd="@+id/intercept_blacklist_text_view"
+            android:src="@drawable/guide" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

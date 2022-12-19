@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--item -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    tools:ignore="MissingDefaultResource">
+    <!--电话 -->
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="25dp"
+        android:gravity="left"
+        android:textStyle="bold"
+        android:id="@+id/nickname"
+        android:textColor="@color/color_666666"
+        />
+    <!-- 时间-->
+    <TextView
+        android:layout_width="180dp"
+        android:textSize="20dp"
+        android:textColor="@color/color_666666"
+        android:gravity="right"
+        android:textStyle="italic"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/phone_number"
+        />
+</LinearLayout>

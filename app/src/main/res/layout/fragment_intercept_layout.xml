@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_page_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="left"
+        android:text="拦截 "
+        android:textColor="@color/color_black"
+        android:textStyle="bold"
+        android:textSize="38sp" />
+
+    <LinearLayout
+        android:layout_width="139dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:background="@drawable/textview_border"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:text="短信"
+            android:pointerIcon="hand"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/intercept_message"
+            android:textColor="@color/theme_color"
+            android:textSize="26sp" />
+
+        <TextView
+            android:background="@drawable/textview_transparentborder"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:pointerIcon="hand"
+            android:gravity="center"
+            android:clickable="true"
+            android:text="电话"
+            android:layout_marginRight="5dp"
+            android:id="@+id/intercept_phone"
+            android:textColor="@color/color_666666"
+            android:textSize="26sp" />
+    </LinearLayout>
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/interceptlistView"
+        />
+
+</LinearLayout>
